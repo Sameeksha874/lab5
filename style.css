@@ -1,47 +1,70 @@
-body h1,h2,p{
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+     background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
 }
-header{
+
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: center;
     padding: 1rem;
 }
-main{
+
+main {
     padding: 2rem;
 }
-proflie{
+
+.profile {
     display: flex;
-    align-items: centre;
+    align-items: center;
 }
-.photo{
+
+.photo {
     flex: 1;
-    padding:0 2rem;
+    padding: 0 2rem;
 }
-.photo img{
-    max-width: 100%;
-    height:auto;
+.photo img {
+    width: 800px;       
+    height: 800px;
+    height: auto;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.bio{
-    flex:2;
-}
-footer{
+
+.bio {
+    flex: 2;
     text-align: center;
-    padding:1 rem0;
-    background-color: #333;
-    color:#fff;
+    align-items: center;
 }
-@media screen  and(max-width:768){
-    .profile{
+.bio p {
+    font-size: 22px;
+    align-items: center;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
         flex-direction: column;
+        align-items: center;
     }
-    
 }
